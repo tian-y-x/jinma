@@ -1,0 +1,27 @@
+<view class="page-body">
+  <view class="page-section tc">
+    <video 
+      id="myVideo" 
+      src="https://cdn1.zhizhucms.com/materials/64/video/03d7d60cdb5002d05f69f55fa0211277.mp4" 
+      binderror="videoErrorCallback" 
+      bindpause="pauseHandle"
+      bindended="endHandle"
+      danmu-list="{{danmuList}}" 
+      enable-danmu 
+      danmu-btn 
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      controls
+      picture-in-picture-mode="{{['push', 'pop']}}"
+      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+      class="page-video"
+    ></video>
+    <view style="margin: 30rpx auto" class="weui-label">弹幕内容</view>
+    <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+    <button style="margin: 30rpx auto"  bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button>
+    <navigator style="margin: 30rpx auto"  url="picture-in-picture" hover-class="other-navigator-hover">
+      <button type="primary" class="page-body-button" bindtap="bindPlayVideo">小窗模式</button>
+    </navigator>
+  </view>
+</view>

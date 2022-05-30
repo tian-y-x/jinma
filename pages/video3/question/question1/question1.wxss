@@ -1,0 +1,2 @@
+/* pages/video3/question/question1/question1.wxss */
+@import "../../../video1/question/question1/question1.wxss";

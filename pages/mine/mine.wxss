@@ -1,0 +1,11 @@
+/* pages/mine/mine.wxss */
+.text{
+  text-align: center;
+  position:relative;
+  top:300rpx;
+}
+.button{
+  position:fixed;
+    top:500rpx;
+    right:330rpx
+}

@@ -1,0 +1,14 @@
+<!--pages/video1/question/question1/question1.wxml-->
+<view class="page">
+<view class="ques">{{q}}</view>
+<view wx:for="{{checkList}}" wx:key="index" class="options">
+<checkbox bindtap="checkboxTap" data-index="{{index}}"></checkbox>
+  <view class="opt-content">
+    <view>{{item.choice}}. {{item.ans}}</view>
+  </view>
+
+</view>
+<view class = "button">
+  <button type="primary" plain="true" bindtap="buttonTap">确认</button>
+</view>
+</view>

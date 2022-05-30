@@ -1,0 +1,5 @@
+<!--pages/video2/video2.wxml-->
+<video src="../../video_source/20210505_133819.mp4" binderror="videoErrorCallback"></video>
+<view>
+  还没有视频
+</view>

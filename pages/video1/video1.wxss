@@ -1,0 +1,28 @@
+/* pages/video1/video1.wxss */
+.page-body{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+}
+
+.tc{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  background-color: #95EC69;
+}
+.page-video{
+  width: 100%;
+  height: 50%;
+
+  text-align:center;
+  
+}
+.weui-label{
+  padding-left:20rpx;
+}
+.weui-input{
+  padding-left:20rpx;
+}

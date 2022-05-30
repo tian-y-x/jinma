@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/video1/video1",
+    "pages/video2/video2",
+    "pages/video3/video3",
+    "pages/video1/question/question1/question1",
+    "pages/video1/question/question2/question2",
+    "pages/video3/question/question1/question1",
+
+    "pages/mine/favor/favor",
+    "pages/mine/history/history",
+    "pages/mine/about/about",
+    "pages/mine/feedback/feedback",
+    "pages/auth/auth",
+    "pages/telform/telform"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#14c145",
+    "navigationBarTitleText": "金马普法",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/zhuye.png",
+      "selectedIconPath": "images/icon_home.png"
+    },
+
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "images/mine.png",
+      "selectedIconPath": "images/mine_fill.png"
+    }
+  ]
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "darkmode": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

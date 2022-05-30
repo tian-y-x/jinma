@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<view class="box">
+  <view wx:for="{{videolist}}" wx:key="index" class="item {{current===index?'active':''}}" bindtap = "handleTap" data-myid="{{index}}">
+    <text>
+      {{item}}
+    </text>
+  </view>
+</view>

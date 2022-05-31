@@ -21,7 +21,8 @@ Page({
    */
   data: {
     promptdisplay:"",
-    listdisplay:"none"
+    listdisplay:false,
+    userInfo:{}
   },
   handleAuth(){
     wx.getUserProfile({
@@ -30,8 +31,8 @@ Page({
         console.log(res)
         wx.setStorageSync('token', res.userInfo)
         this.setData({
-          promptdisplay:"none",
-          listdisplay:""
+          userInfo:res.userInfo,
+          listdisplay:true
         })
       }
     })

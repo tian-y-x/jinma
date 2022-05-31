@@ -1,8 +1,42 @@
 <!--pages/home/home.wxml-->
-<view class="box">
+<!-- <view class="box">
   <view wx:for="{{videolist}}" wx:key="index" class="item {{current===index?'active':''}}" bindtap = "handleTap" data-myid="{{index}}">
     <text>
       {{item}}
     </text>
   </view>
+</view> -->
+
+<image src="/images/app/000.jpg" mode="widthFix" style="width: 100%;display: block;"></image>
+<view class="content">
+<view class="border hint">
+<view class="hintbox">
+<image src="/images/app/laba.png"></image>
+<text>金马普法提醒您：知法铭心智，懂法正言行，守法创和谐。</text>
 </view>
+</view>
+<view class="border items">
+<view class="item">
+<image src="/images/app/vedio.png" mode="widthFix"></image>
+<text>视频中心</text>
+</view>
+<view class="item">
+<image src="/images/app/answer.png" mode="widthFix"></image>
+<text>答题记录</text></view>
+<view style="width: 100%;height: 1rpx;background-color: rgb(206, 206, 206);"></view>
+<view class="item">
+<image src="/images/app/score.png" mode="widthFix"></image>
+<text>积分商城</text></view>
+<view class="item">
+<image src="/images/app/consult.png" mode="widthFix"></image>
+<text>咨询中心</text></view>
+<view style="width: 100%;height: 1rpx;background-color: rgb(206, 206, 206);"></view>
+<view class="item">
+<image src="/images/app/service.png" mode="widthFix"></image>
+<text>联系客服</text></view>
+<view class="item"  style="margin-top: 15rpx;">
+<image src="/images/app/more.png" mode="widthFix"></image>
+<text>更多</text></view>
+</view>
+</view>
+

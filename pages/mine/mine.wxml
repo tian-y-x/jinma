@@ -48,7 +48,7 @@
     </mp-cells>
   </view>
  -->
-<view style="display:{{listdisplay}}">
+<!-- <view style="display:{{listdisplay}}">
  <view class="page">
 
   <view class="page__bd" >
@@ -117,13 +117,65 @@
 </view>
 
  </view>
+</view> -->
+
+<view>
+<view style="display: flex;margin-top: 20rpx;">
+<image src="/images/app/logo.png" mode="widthFix" style="width: 30%;display: block;"></image>
+    <image src="/images/app/111.png" mode="widthFix" style="width: 70%;display: block;"></image>
+    <image src="/images/app/222.png" mode="widthFix" style="width: 40%;display: block; margin-top: 20%;"></image>
+</view>
+
+<view class="content">
+<view class="border userbox">
+<view>
+<image wx:if="{{!userInfo.avatarUrl}}" src="/images/app/user.png" mode="widthFix" style="width: 70rpx;display: inline-block;vertical-align: bottom;margin-right: 20rpx;"></image>
+<image wx:else src="{{userInfo.avatarUrl}}" mode="widthFix" style="width: 70rpx;display: inline-block;vertical-align: bottom;margin-right: 20rpx;"></image>
+<text>用户:{{userInfo.nickName}}</text>
+</view>
+<view wx:if="{{!listdisplay}}">
+<van-button color="#ffeea2" size="small" round custom-style="color:black;margin-top:10rpx;" bind:click = "handleAuth">立即登录</van-button></view>
+<!-- <view wx:else>
+<van-button color="#ffeea2" size="small" round custom-style="color:black;margin-top:10rpx;" bind:click = "handleAuth">退出登录</van-button></view> -->
+</view>
+<view class="border hint">
+<view class="hintbox">
+<view style="display: flex;">
+<image src="/images/app/sign.png" style="margin-top: 10rpx;"></image>
+<text>积分签到\nintegral area</text>
+</view>
+<image src="/images/app/sign2.png" mode="widthFix" style="width: 100rpx;"></image>
+</view>
+</view>
+<view class="border items">
+<view class="item">
+<image src="/images/app/collect.png" mode="widthFix"></image>
+<text>我的收藏</text>
+</view>
+<view class="item">
+<image src="/images/app/history.png" mode="widthFix"></image>
+<text>观看历史</text></view>
+<view style="width: 100%;height: 1rpx;background-color: rgb(206, 206, 206);"></view>
+<view class="item">
+<image src="/images/app/about.png" mode="widthFix" style="height: 10%;"></image>
+<text>关于我们</text></view>
+<view class="item" >
+<image src="/images/app/consult.png" mode="widthFix" ></image>
+<text>反馈</text></view>
+<view style="width: 100%;height: 1rpx;background-color: rgb(206, 206, 206);"></view>
+<view class="item">
+<image src="/images/app/set.png" mode="widthFix"></image>
+<text>设置</text></view>
+<view class="item"  style="margin-top: 25rpx;">
+<image src="/images/app/more.png" mode="widthFix"></image>
+<text>更多</text></view>
+</view>
+</view>
 </view>
 
 
-
-
-  <view style="display:{{promptdisplay}}">
+  <!-- <view style="display:{{promptdisplay}}">
     <view class="text">您还没有登录哦，点击登录</view>
     <button class="mini-btn" type="primary" size="mini" bindtap = "handleAuth"  class="button">登录</button>
-  </view>
+  </view> -->
 

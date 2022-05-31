@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/home/home",
     "pages/mine/mine",
     "pages/logs/logs",
-    "pages/home/home",
     "pages/video1/video1",
     "pages/video2/video2",
     "pages/video3/video3",
@@ -20,25 +20,29 @@
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#14c145",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "金马普法",
     "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff"
+
   },
   "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#1E90FF",
     "list": [
     {
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath": "images/zhuye.png",
-      "selectedIconPath": "images/icon_home.png"
+      "iconPath": "images/app/index.png",
+      "selectedIconPath": "images/app/index.png"
     },
 
     {
       "pagePath": "pages/mine/mine",
       "text": "我的",
-      "iconPath": "images/mine.png",
-      "selectedIconPath": "images/mine_fill.png"
+      "iconPath": "images/app/info.png",
+      "selectedIconPath": "images/app/info.png"
     }
   ]
   },
@@ -47,6 +51,5 @@
     "weui": true
   },
   "darkmode": true,
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
